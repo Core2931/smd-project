@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-const Dashboard = () => {
+const Managecontact = () => {
   return (
     //form
     <section className="#">
@@ -44,11 +44,32 @@ const Dashboard = () => {
             <div class="main-border">
               <div class="text-center">
                 <br></br>
-                <h3 class="text-primary"><b><i class="fas fa-bullhorn"></i> ประกาศจากผู้ดูแลระบบ !!</b></h3>
+                <h3 class="text-primary"><b><i class="fas fa-headset"></i> ติดต่อผู้ดูแลระบบ</b></h3>
                 <hr></hr>
-                <li class="h5 text-danger">ด่วน !! ให้ผู้อาศัยทุกคนดำเนินการชำระค่าส่วนกลางได้โดยสามารถดูรายการได้ในหน้าการเงิน</li>
-                <li>ผู้อาศัยสามารถดูรายละเอียดเกี่ยวกับการเงินได้ในเมนู Management</li>
-                <li>ผู้อาศัยสามารถดูรายละเอียดพัสดุของท่านได้ในเมนู Manage Post</li>
+                <form>
+                  <div class="row justify-content-center">
+                    <div class="col-9">
+                      <label>ชื่อผู้ติดต่อ</label>
+                      <input type="text" class="form-control" placeholder="ชื่อผู้ติดต่อ" required/>
+                    </div>
+                    <div class="col-9">
+                      <label>เลขที่ห้อง</label>
+                      <input type="number" class="form-control" placeholder="เลขที่ห้อง" required/>
+                    </div>                    
+                    <div class="col-9">
+                    <label>เบอร์โทรติดต่อ</label>
+                      <input type="text" class="form-control" placeholder="เบอร์โทรศัพท์" required/>
+                    </div>
+                    <div class="col-9">
+                      <label>รายละเอียดที่ต้องการแจ้ง</label>
+                      <textarea rows='5' type="text" class="form-control" placeholder="รายละเอียดที่ต้องการติดต่อ ตัวอย่าง แจ้งเรื่องปัญหาที่ห้อง 205" required/>
+                    </div>
+                    <div class="col-9">
+                      <br></br>
+                      <button type="submit" class="btn btn-warning btn-md">ส่งข้อมูล</button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>  
@@ -61,4 +82,4 @@ const Dashboard = () => {
     </section>
   );
 };
-export default Dashboard;
+export default Managecontact;
