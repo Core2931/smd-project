@@ -41,7 +41,7 @@ const Index = () => {
             </Link>
           </div>
           <div class="mt-4 col pr-5">
-            อันนี้เป็นส่วนของหน้าตาม Mock up 
+            รายชื่อห้องพัก
           </div>      
         </div>
         <br></br>
